@@ -12,7 +12,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get('https://bhabanisankar02.github.io/BookstoreMERNstack')
+      .get('http://localhost:5555/books')
       .then((response) => {
         setBooks(response.data.data);
         setLoading(false);
